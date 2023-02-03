@@ -1,0 +1,49 @@
+\hypertarget{_world_8h_source}{}\doxysection{World.\+h}
+\mbox{\hyperlink{_world_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//GAME3015-\/Assignment1-\/Zijie\ Wang}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//Name:Zijie\ Wang}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//ID:101283316}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//Last\ Updated:\ 2/2/2022}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_aircraft_8h}{Aircraft.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_world}{World}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_world_afa39d4e6f714a7a3691ac0c656f5e8a8}{World}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_world_a8c73fba541a5817fff65147ba47cd827}{\string~World}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_scene_node}{SceneNode}}*\ \mbox{\hyperlink{class_world_a41a3d6173080108bd85c1224d3cca933}{m\_RootNode}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ std::map<std::string,\ std::unique\_ptr<Material>>\ \mbox{\hyperlink{class_world_aa3af5b8b78b28110b3d60541b5744f9f}{mMaterials}};}
+\DoxyCodeLine{00026\ \ \ \ \ std::list<SceneNode*>\ \ \ \mbox{\hyperlink{class_world_a23253a80df6ecb711dace56fc3e9ee20}{m\_RenderList}};}
+\DoxyCodeLine{00027\ \ \ \ \ std::unique\_ptr<MeshGeometry>\ \ \ \mbox{\hyperlink{class_world_ad8e82905815f956a43314e52bfbee9de}{m\_Mesh}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//Terrain\ }}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_world_a1ae5b0ba0f1f1424ef998fb29c56abc8}{Terrain1}}=\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_entity}{Entity}};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_world_a48526edee7b706d3d840222bfd774cb5}{Terrain2}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_entity}{Entity}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//Wingman}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_world_a30df3ffd57ab290ba0fe445fda3cba90}{Wingman1}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_player}{Player}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_world_a340e0b43ca1edc349b4e26c832efd5a3}{Wingman2}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_player}{Player}};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//Enemy}}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_aircraft}{Aircraft}}*\ \mbox{\hyperlink{class_world_a3c438b172f941d8d026dd45ae3ddfc1a}{Enemy}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_aircraft}{Aircraft}};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//Player}}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}*\ \mbox{\hyperlink{class_world_addf54f12f3a1e9c8f120265bafa3474e}{player}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_player}{Player}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_world_acd649dca4bf0608df6fb6d153e2274c8}{Build}}(ID3D12Device*\ Device,\ ID3D12GraphicsCommandList*\ CmdList);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_world_a2855c23b04b207643d162e3f4d2dd6f8}{Update}}(\textcolor{keywordtype}{float}\ DeltaTime,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{struct_frame_resource}{FrameResource}}*\ Frame);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_world_a49d6a1ac236041e2d71fdca61adf31e3}{Draw}}(ID3D12GraphicsCommandList*\ CmdList,\ ID3D12DescriptorHeap*\ Desc,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ UINT\ DescSize,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{struct_frame_resource}{FrameResource}}*\ Frame,\ \textcolor{keywordtype}{float}\ DeltaTime);}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+
+\end{DoxyCode}

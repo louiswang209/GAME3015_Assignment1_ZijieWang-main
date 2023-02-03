@@ -1,0 +1,191 @@
+\hypertarget{class_entity}{}\doxysection{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+Main class for most objects in game world.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+
+
+Inheritance diagram for Entity\+:
+% FIG 0
+
+
+Collaboration diagram for Entity\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity}} ()
+\item 
+\mbox{\hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{$\sim$\+Entity}} ()
+\item 
+virtual void \mbox{\hyperlink{class_entity_ac4025ea862585a94f6e27cecfae9423e}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\item 
+virtual void \mbox{\hyperlink{class_entity_acd47026ad7c92f1fbc74aebf6cc21c73}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, float Delta\+Time)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_scene_node}{Scene\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_node_acc2e7940323560ba86dad8e2d6eb6690}{Scene\+Node}} ()
+\item 
+virtual \mbox{\hyperlink{class_scene_node_a11be58b869975806f2ff5a627770fa2e}{$\sim$\+Scene\+Node}} ()
+\item 
+int \mbox{\hyperlink{class_scene_node_a70ac4cc49e8b654c1cfed634acfae37d}{Get\+Tex\+Index}} () const
+\item 
+void \mbox{\hyperlink{class_scene_node_a2dc32f32b3baf3b8bc03367fcb8a6f7f}{Set\+MBIndex}} (int Index)
+\item 
+const XMFLOAT3 \& \mbox{\hyperlink{class_scene_node_ad50a6e215bab80634b6766a9bcd8a34d}{Get\+Scale}} () const
+\item 
+const XMFLOAT3 \& \mbox{\hyperlink{class_scene_node_a2c95ebec2b379f1ed03ad3ce17fde306}{Get\+Rotation}} () const
+\item 
+const XMFLOAT3 \& \mbox{\hyperlink{class_scene_node_aaebde8683ff39183ec3aaddd261379de}{Get\+Pos}} () const
+\item 
+void \mbox{\hyperlink{class_scene_node_aa28ef534fac93d583388e61e26d863b9}{Set\+Scale}} (const XMFLOAT3 \&Scale)
+\item 
+void \mbox{\hyperlink{class_scene_node_a8b3f450fde826723e0e0c66c9fe77d68}{Set\+Scale}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a49da44a1fd578be7df15556db6919914}{Set\+Rot}} (const XMFLOAT3 \&Rot)
+\item 
+void \mbox{\hyperlink{class_scene_node_a155eb0db136f6544230d97b75c918e5d}{Set\+Rot}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a1eb858b9d59424bc2931ee3c5233ef13}{Set\+Pos}} (const XMFLOAT3 \&Pos)
+\item 
+void \mbox{\hyperlink{class_scene_node_a3c7854295ac230b90f80e192644c4ca3}{Set\+Pos}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}{Move}} (const XMFLOAT3 \&Move)
+\item 
+void \mbox{\hyperlink{class_scene_node_a272ad455fd176527733f7ed4c8202079}{Move}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a0834df5618d4783af5f28e8df3c96e5d}{Move}} (const XMFLOAT3 \&Dir, float Speed, float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_scene_node_a0c5275e2cbbe05d7096cd41ecc9f2082}{Add\+Child}} (\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$Child)
+\item 
+virtual void \mbox{\hyperlink{class_scene_node_aa801e799edb585d7e371ffacf4786f94}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\item 
+virtual void \mbox{\hyperlink{class_scene_node_aff66e54036d74d2ae7dd469ff7fdd2e1}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, float Delta\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_entity_a11914ab8705e2ae259839b2e46027098}{m\+\_\+\+Move\+Speed}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_scene_node}{Scene\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ \mbox{\hyperlink{class_scene_node_a0900fe740317dd97de10421a5e62d9e5}{m\+\_\+\+Parent}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ $>$ \mbox{\hyperlink{class_scene_node_adeb9932c84312711cb7d7ba70685c61d}{m\+\_\+\+Child\+List}}
+\item 
+XMFLOAT3 \mbox{\hyperlink{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}{m\+\_\+\+Scale}}
+\item 
+XMFLOAT3 \mbox{\hyperlink{class_scene_node_a65c407119966797cc8513b249206912e}{m\+\_\+\+Rot}}
+\item 
+XMFLOAT3 \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\+\_\+\+Pos}}
+\item 
+XMFLOAT4\+X4 \mbox{\hyperlink{class_scene_node_a103201cc39df413aa3816470dbeaed02}{m\+\_\+mat\+World}}
+\item 
+int \mbox{\hyperlink{class_scene_node_ae71ced48f373f227baa40bb85f92e310}{m\+\_\+\+CBIndex}}
+\item 
+int \mbox{\hyperlink{class_scene_node_a3e4620c8169585fda39f232192afdfda}{m\+\_\+\+MBIndex}}
+\item 
+int \mbox{\hyperlink{class_scene_node_add46ebd17408bc1de1c6b2fff071ed87}{m\+\_\+\+Tex\+Index}}
+\item 
+bool \mbox{\hyperlink{class_scene_node_ae453944f73755e53d380c8fe620a3921}{m\+\_\+\+Render}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_entity_a7b4bcdf992c21ae83363f25df05b1d25}{World}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_scene_node}{Scene\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_scene_node_afb35484034ad91cbb9a35b4fcb4f785a}{m\+\_\+\+Global\+CBIndex}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main class for most objects in game world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_entity_a980f368aa07ce358583982821533a54a}\label{class_entity_a980f368aa07ce358583982821533a54a}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}\label{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}} 
+\index{Entity@{Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_acd47026ad7c92f1fbc74aebf6cc21c73}\label{class_entity_acd47026ad7c92f1fbc74aebf6cc21c73}} 
+\index{Entity@{Entity}!Draw@{Draw}}
+\index{Draw@{Draw}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Entity\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_scene_node_aff66e54036d74d2ae7dd469ff7fdd2e1}{Scene\+Node}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_aircraft_a9ac5b18ff8fb21a428b43a1e5186da3f}{Aircraft}}, and \mbox{\hyperlink{class_player_a25fd192b51bbbfbb198531dccb6e33c1}{Player}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_entity_ac4025ea862585a94f6e27cecfae9423e}\label{class_entity_ac4025ea862585a94f6e27cecfae9423e}} 
+\index{Entity@{Entity}!Update@{Update}}
+\index{Update@{Update}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Entity\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_scene_node_aa801e799edb585d7e371ffacf4786f94}{Scene\+Node}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_aircraft_a5b6aa652ded773918ad1e5e6a2ad49bd}{Aircraft}}, and \mbox{\hyperlink{class_player_a7b8ee868edd6de769ec57985b19a04d5}{Player}}.
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_entity_a7b4bcdf992c21ae83363f25df05b1d25}\label{class_entity_a7b4bcdf992c21ae83363f25df05b1d25}} 
+\index{Entity@{Entity}!World@{World}}
+\index{World@{World}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{World}{World}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_world}{World}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_entity_a11914ab8705e2ae259839b2e46027098}\label{class_entity_a11914ab8705e2ae259839b2e46027098}} 
+\index{Entity@{Entity}!m\_MoveSpeed@{m\_MoveSpeed}}
+\index{m\_MoveSpeed@{m\_MoveSpeed}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_MoveSpeed}{m\_MoveSpeed}}
+{\footnotesize\ttfamily float Entity\+::m\+\_\+\+Move\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_entity_8h}{Entity.\+h}}\item 
+\mbox{\hyperlink{_entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}

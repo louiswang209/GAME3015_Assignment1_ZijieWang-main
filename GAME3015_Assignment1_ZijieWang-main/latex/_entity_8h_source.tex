@@ -1,0 +1,30 @@
+\hypertarget{_entity_8h_source}{}\doxysection{Entity.\+h}
+\mbox{\hyperlink{_entity_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//GAME3015-\/Assignment1-\/Zijie\ Wang}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//Name:Zijie\ Wang}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//ID:101283316}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//Last\ Updated:\ 2/2/2022}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_scene_node_8h}{SceneNode.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_frame_resource_8h}{FrameResource.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity}{Entity}}\ \ :}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_scene_node}{SceneNode}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_world}{World}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{\string~Entity}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ \ \ \mbox{\hyperlink{class_entity_a11914ab8705e2ae259839b2e46027098}{m\_MoveSpeed}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_ac4025ea862585a94f6e27cecfae9423e}{Update}}(\textcolor{keywordtype}{float}\ DeltaTime,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{struct_frame_resource}{FrameResource}}*\ Frame);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_acd47026ad7c92f1fbc74aebf6cc21c73}{Draw}}(ID3D12GraphicsCommandList*\ CmdList,\ \textcolor{keywordtype}{float}\ DeltaTime);}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+
+\end{DoxyCode}

@@ -1,0 +1,17 @@
+digraph "SceneNode::Update"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="SceneNode::Update",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Entity::Update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_entity.html#ac4025ea862585a94f6e27cecfae9423e",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="Aircraft::Update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_aircraft.html#a5b6aa652ded773918ad1e5e6a2ad49bd",tooltip="Simple script that prevents going out of bounds."];
+  Node2 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="Player::Update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_player.html#a7b8ee868edd6de769ec57985b19a04d5",tooltip="Handles player movement."];
+  Node1 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="World::Update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_world.html#a2855c23b04b207643d162e3f4d2dd6f8",tooltip="Update root node and scroll the background."];
+}

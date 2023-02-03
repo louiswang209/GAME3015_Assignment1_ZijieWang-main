@@ -1,0 +1,175 @@
+\hypertarget{class_world}{}\doxysection{World Class Reference}
+\label{class_world}\index{World@{World}}
+
+
+Handles all objects that are built in \mbox{\hyperlink{class_world}{World}}.  
+
+
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+
+
+Collaboration diagram for World\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_world_afa39d4e6f714a7a3691ac0c656f5e8a8}{World}} ()
+\item 
+\mbox{\hyperlink{class_world_a8c73fba541a5817fff65147ba47cd827}{$\sim$\+World}} ()
+\item 
+void \mbox{\hyperlink{class_world_acd649dca4bf0608df6fb6d153e2274c8}{Build}} (ID3\+D12\+Device $\ast$Device, ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List)
+\begin{DoxyCompactList}\small\item\em Build all objects in game world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_world_a2855c23b04b207643d162e3f4d2dd6f8}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\begin{DoxyCompactList}\small\item\em Update root node and scroll the background. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_world_a49d6a1ac236041e2d71fdca61adf31e3}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, ID3\+D12\+Descriptor\+Heap $\ast$Desc, UINT Desc\+Size, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame, float Delta\+Time)
+\begin{DoxyCompactList}\small\item\em Draw all objects in game world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ \mbox{\hyperlink{class_world_a41a3d6173080108bd85c1224d3cca933}{m\+\_\+\+Root\+Node}}
+\item 
+std\+::map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ Material $>$ $>$ \mbox{\hyperlink{class_world_aa3af5b8b78b28110b3d60541b5744f9f}{m\+Materials}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ $>$ \mbox{\hyperlink{class_world_a23253a80df6ecb711dace56fc3e9ee20}{m\+\_\+\+Render\+List}}
+\item 
+std\+::unique\+\_\+ptr$<$ Mesh\+Geometry $>$ \mbox{\hyperlink{class_world_ad8e82905815f956a43314e52bfbee9de}{m\+\_\+\+Mesh}}
+\item 
+\mbox{\hyperlink{class_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_world_a1ae5b0ba0f1f1424ef998fb29c56abc8}{Terrain1}} = new \mbox{\hyperlink{class_entity}{Entity}}
+\item 
+\mbox{\hyperlink{class_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_world_a48526edee7b706d3d840222bfd774cb5}{Terrain2}} = new \mbox{\hyperlink{class_entity}{Entity}}
+\item 
+\mbox{\hyperlink{class_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_world_a30df3ffd57ab290ba0fe445fda3cba90}{Wingman1}} = new \mbox{\hyperlink{class_player}{Player}}
+\item 
+\mbox{\hyperlink{class_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_world_a340e0b43ca1edc349b4e26c832efd5a3}{Wingman2}} = new \mbox{\hyperlink{class_player}{Player}}
+\item 
+\mbox{\hyperlink{class_aircraft}{Aircraft}} $\ast$ \mbox{\hyperlink{class_world_a3c438b172f941d8d026dd45ae3ddfc1a}{Enemy}} = new \mbox{\hyperlink{class_aircraft}{Aircraft}}
+\item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_world_addf54f12f3a1e9c8f120265bafa3474e}{player}} = new \mbox{\hyperlink{class_player}{Player}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles all objects that are built in \mbox{\hyperlink{class_world}{World}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_world_afa39d4e6f714a7a3691ac0c656f5e8a8}\label{class_world_afa39d4e6f714a7a3691ac0c656f5e8a8}} 
+\index{World@{World}!World@{World}}
+\index{World@{World}!World@{World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily World\+::\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_world_a8c73fba541a5817fff65147ba47cd827}\label{class_world_a8c73fba541a5817fff65147ba47cd827}} 
+\index{World@{World}!````~World@{$\sim$World}}
+\index{````~World@{$\sim$World}!World@{World}}
+\doxysubsubsection{\texorpdfstring{$\sim$World()}{~World()}}
+{\footnotesize\ttfamily World\+::$\sim$\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_world_acd649dca4bf0608df6fb6d153e2274c8}\label{class_world_acd649dca4bf0608df6fb6d153e2274c8}} 
+\index{World@{World}!Build@{Build}}
+\index{Build@{Build}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily void World\+::\+Build (\begin{DoxyParamCaption}\item[{ID3\+D12\+Device $\ast$}]{Device,  }\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List }\end{DoxyParamCaption})}
+
+
+
+Build all objects in game world. 
+
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_world_a49d6a1ac236041e2d71fdca61adf31e3}\label{class_world_a49d6a1ac236041e2d71fdca61adf31e3}} 
+\index{World@{World}!Draw@{Draw}}
+\index{Draw@{Draw}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void World\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{ID3\+D12\+Descriptor\+Heap $\ast$}]{Desc,  }\item[{UINT}]{Desc\+Size,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Draw all objects in game world. 
+
+\mbox{\Hypertarget{class_world_a2855c23b04b207643d162e3f4d2dd6f8}\label{class_world_a2855c23b04b207643d162e3f4d2dd6f8}} 
+\index{World@{World}!Update@{Update}}
+\index{Update@{Update}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void World\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})}
+
+
+
+Update root node and scroll the background. 
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_world_a3c438b172f941d8d026dd45ae3ddfc1a}\label{class_world_a3c438b172f941d8d026dd45ae3ddfc1a}} 
+\index{World@{World}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Enemy}{Enemy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_aircraft}{Aircraft}}$\ast$ World\+::\+Enemy = new \mbox{\hyperlink{class_aircraft}{Aircraft}}}
+
+\mbox{\Hypertarget{class_world_ad8e82905815f956a43314e52bfbee9de}\label{class_world_ad8e82905815f956a43314e52bfbee9de}} 
+\index{World@{World}!m\_Mesh@{m\_Mesh}}
+\index{m\_Mesh@{m\_Mesh}!World@{World}}
+\doxysubsubsection{\texorpdfstring{m\_Mesh}{m\_Mesh}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$Mesh\+Geometry$>$ World\+::m\+\_\+\+Mesh}
+
+\mbox{\Hypertarget{class_world_a23253a80df6ecb711dace56fc3e9ee20}\label{class_world_a23253a80df6ecb711dace56fc3e9ee20}} 
+\index{World@{World}!m\_RenderList@{m\_RenderList}}
+\index{m\_RenderList@{m\_RenderList}!World@{World}}
+\doxysubsubsection{\texorpdfstring{m\_RenderList}{m\_RenderList}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_scene_node}{Scene\+Node}}$\ast$$>$ World\+::m\+\_\+\+Render\+List}
+
+\mbox{\Hypertarget{class_world_a41a3d6173080108bd85c1224d3cca933}\label{class_world_a41a3d6173080108bd85c1224d3cca933}} 
+\index{World@{World}!m\_RootNode@{m\_RootNode}}
+\index{m\_RootNode@{m\_RootNode}!World@{World}}
+\doxysubsubsection{\texorpdfstring{m\_RootNode}{m\_RootNode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_node}{Scene\+Node}}$\ast$ World\+::m\+\_\+\+Root\+Node}
+
+\mbox{\Hypertarget{class_world_aa3af5b8b78b28110b3d60541b5744f9f}\label{class_world_aa3af5b8b78b28110b3d60541b5744f9f}} 
+\index{World@{World}!mMaterials@{mMaterials}}
+\index{mMaterials@{mMaterials}!World@{World}}
+\doxysubsubsection{\texorpdfstring{mMaterials}{mMaterials}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::unique\+\_\+ptr$<$Material$>$ $>$ World\+::m\+Materials}
+
+\mbox{\Hypertarget{class_world_addf54f12f3a1e9c8f120265bafa3474e}\label{class_world_addf54f12f3a1e9c8f120265bafa3474e}} 
+\index{World@{World}!player@{player}}
+\index{player@{player}!World@{World}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ World\+::player = new \mbox{\hyperlink{class_player}{Player}}}
+
+\mbox{\Hypertarget{class_world_a1ae5b0ba0f1f1424ef998fb29c56abc8}\label{class_world_a1ae5b0ba0f1f1424ef998fb29c56abc8}} 
+\index{World@{World}!Terrain1@{Terrain1}}
+\index{Terrain1@{Terrain1}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Terrain1}{Terrain1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}}$\ast$ World\+::\+Terrain1 = new \mbox{\hyperlink{class_entity}{Entity}}}
+
+\mbox{\Hypertarget{class_world_a48526edee7b706d3d840222bfd774cb5}\label{class_world_a48526edee7b706d3d840222bfd774cb5}} 
+\index{World@{World}!Terrain2@{Terrain2}}
+\index{Terrain2@{Terrain2}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Terrain2}{Terrain2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}}$\ast$ World\+::\+Terrain2 = new \mbox{\hyperlink{class_entity}{Entity}}}
+
+\mbox{\Hypertarget{class_world_a30df3ffd57ab290ba0fe445fda3cba90}\label{class_world_a30df3ffd57ab290ba0fe445fda3cba90}} 
+\index{World@{World}!Wingman1@{Wingman1}}
+\index{Wingman1@{Wingman1}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Wingman1}{Wingman1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}}$\ast$ World\+::\+Wingman1 = new \mbox{\hyperlink{class_player}{Player}}}
+
+\mbox{\Hypertarget{class_world_a340e0b43ca1edc349b4e26c832efd5a3}\label{class_world_a340e0b43ca1edc349b4e26c832efd5a3}} 
+\index{World@{World}!Wingman2@{Wingman2}}
+\index{Wingman2@{Wingman2}!World@{World}}
+\doxysubsubsection{\texorpdfstring{Wingman2}{Wingman2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}}$\ast$ World\+::\+Wingman2 = new \mbox{\hyperlink{class_player}{Player}}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_world_8h}{World.\+h}}\item 
+\mbox{\hyperlink{_world_8cpp}{World.\+cpp}}\end{DoxyCompactItemize}
