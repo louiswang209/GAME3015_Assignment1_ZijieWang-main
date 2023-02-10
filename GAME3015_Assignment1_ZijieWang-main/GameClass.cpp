@@ -1,7 +1,7 @@
 //GAME3015-Assignment1-Zijie Wang
 //Name:Zijie Wang
 //ID:101283316
-//Last Updated: 2/2/2022
+//Last Updated: 10/2/2022
 
 #include "GameClass.h"
 
@@ -199,7 +199,7 @@ void Game::OnKeyboardInput(const GameTimer& gt)
 void Game::UpdateCamera(const GameTimer& gt)
 {
 	// Build the view XMFLOAT4X4.
-	XMVECTOR pos = XMVectorSet(0, 100, 0, 1.0f);
+	XMVECTOR pos = XMVectorSet(0, 100, -100, 1.0f);
 	XMVECTOR target = XMVectorZero();
 	XMVECTOR right = XMVectorSet(0.0f, 0.0f, 1.0f, 0.0f);
 
